@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+  padding: 0;
+  line-height: .2;
+  font-family: "Georgia";
+  font-size: 1.3em;
+    
+  width: 90%;
+  margin: auto;
+}
+canvas {
+  text-align: center;
+  display: block;
+}
+
+div{
+  text-align:center;
+
+  width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff8bd;
+  border-radius: 5%;
+
+}
+img{
+  /* display: block; */
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align:center;
+
+  
+  border-radius: 5%;
+  height: 87%;
+  display:inline-block; 
+  /* margin:5px 20px; */
+  padding:5px;
+
+  
+  }
+button{
+  width: 5%;
+}
