@@ -57,7 +57,7 @@ class Zine {
         this.displayImg.src = '/zines/' + folderName + "/" + this.curPage + ".jpg";
 
         this.leftButton = document.createElement("img")
-        this.leftButton.src = "/pics/left.png";
+        this.leftButton.src = "/pics/left.PNG";
         this.leftButton.style.height = "10%";
 
 
