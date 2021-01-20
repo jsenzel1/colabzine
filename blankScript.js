@@ -1,3 +1,37 @@
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function () {
+        this.sound.play();
+    }
+    this.stop = function () {
+        this.sound.pause();
+    }
+}
+
+var mySounds = [];
+
+function setup() {
+    for (let i = 0; i < 10; i++) {
+
+        mySounds.push(new sound("/sounds/" + i + ".mp3"));
+
+    }
+    console.log(mySounds);
+}
+
+
+function buttonSound() {
+    index = Math.floor(Math.random() * 10);
+
+    mySounds[index].play();
+}
+
+
 
 class Zine {
     constructor(folderName, title, author) {
@@ -45,6 +79,13 @@ class Zine {
         this.container.appendChild(this.rightButton);
         this.container.appendChild(this.displayText);
 
+        let rH = Math.floor(Math.random() * 60) + 180
+        let rS = Math.floor(Math.random() * 30) + 40
+        let rL = Math.floor(Math.random() * 13) + 85
+
+        this.container.style.background = "hsl(" + rH + "," + rS + "%," + rL + "%)"
+        /* background: #fff8bd; */
+
 
 
     }
@@ -77,6 +118,9 @@ class Zine {
         var self = this;
         this.rightButton.onclick = function () {
 
+            buttonSound();
+
+
             self.curPage++;
 
             if (self.curPage > 8) {
@@ -88,6 +132,8 @@ class Zine {
         };
 
         this.leftButton.onclick = function () {
+            buttonSound();
+
             self.curPage--;
 
             if (self.curPage < 1) {
@@ -103,6 +149,13 @@ class Zine {
 
 }
 
+setup();
+
+
+
 const strangersZine = new Zine("strangers", "Strangers At Home", "Jonah");
 strangersZine.initialize();
+
+const strangersZine2 = new Zine("strangers", "Strangers At Home", "Jonah");
+strangersZine2.initialize();
 // strangersZine.rightButton.onclick = strangersZine.onRight;
