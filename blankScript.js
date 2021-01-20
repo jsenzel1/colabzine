@@ -54,15 +54,15 @@ class Zine {
         this.authorText.innerHTML = "by " + author;
 
         this.curPage = 1;
-        this.displayImg.src = '/zines/' + folderName + "/" + this.curPage + ".jpg";
+        this.displayImg.src = 'zines/' + folderName + "/" + this.curPage + ".jpg";
 
         this.leftButton = document.createElement("img")
-        this.leftButton.src = "/pics/left.PNG";
+        this.leftButton.src = "pics/left.PNG";
         this.leftButton.style.height = "10%";
 
 
         this.rightButton = document.createElement("img")
-        this.rightButton.src = "/pics/right.png";
+        this.rightButton.src = "pics/right.png";
         this.rightButton.style.height = "10%";
 
 
@@ -127,7 +127,7 @@ class Zine {
                 self.curPage = 1;
             }
 
-            self.displayImg.src = '/zines/' + self.name + "/" + self.curPage + ".jpg";
+            self.displayImg.src = 'zines/' + self.name + "/" + self.curPage + ".jpg";
             self.displayText.innerHTML = self.pageNames[self.curPage]
         };
 
@@ -140,7 +140,7 @@ class Zine {
                 self.curPage = 8;
             }
 
-            self.displayImg.src = '/zines/' + self.name + "/" + self.curPage + ".jpg";
+            self.displayImg.src = 'zines/' + self.name + "/" + self.curPage + ".jpg";
             self.displayText.innerHTML = self.pageNames[self.curPage]
         };
         // this.rightButton.onclick = this.onRight();
