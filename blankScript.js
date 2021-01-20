@@ -18,7 +18,7 @@ var mySounds = [];
 function setup() {
     for (let i = 0; i < 10; i++) {
 
-        mySounds.push(new sound("/sounds/" + i + ".mp3"));
+        mySounds.push(new sound("sounds/" + i + ".mp3"));
 
     }
     console.log(mySounds);
