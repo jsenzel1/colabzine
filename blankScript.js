@@ -161,4 +161,22 @@ strangersZine.initialize();
 
 const strangersZine2 = new Zine("strangers", "Strangers At Home", "Jonah");
 strangersZine2.initialize();
+
+const strangersZine = new Zine("strangers", "Strangers At Home", "Jonah");
+strangersZine.initialize();
+
+const strangersZine2 = new Zine("strangers", "Strangers At Home", "Jonah");
+strangersZine2.initialize();
+
+const strangersZine = new Zine("strangers", "Strangers At Home", "Jonah");
+strangersZine.initialize();
+
+const strangersZine2 = new Zine("strangers", "Strangers At Home", "Jonah");
+strangersZine2.initialize();
+
+const strangersZine = new Zine("strangers", "Strangers At Home", "Jonah");
+strangersZine.initialize();
+
+const strangersZine2 = new Zine("strangers", "Strangers At Home", "Jonah");
+strangersZine2.initialize();
 // strangersZine.rightButton.onclick = strangersZine.onRight;
