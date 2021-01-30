@@ -18,7 +18,7 @@ var mySounds = [];
 function setup() {
     for (let i = 0; i < 10; i++) {
 
-        mySounds.push(new sound("sounds/" + i + ".mp3"));
+        mySounds.push(new sound("/colabzine/sounds/" + i + ".mp3"));
 
     }
     console.log(mySounds);
@@ -54,15 +54,15 @@ class Zine {
         this.authorText.innerHTML = "by " + author;
 
         this.curPage = 1;
-        this.displayImg.src = 'zines/' + folderName + "/" + this.curPage + ".jpg";
+        this.displayImg.src = '/colabzine/zines/' + folderName + "/" + this.curPage + ".jpg";
 
         this.leftButton = document.createElement("img")
-        this.leftButton.src = "pics/left.PNG";
+        this.leftButton.src = "/colabzine/pics/left.PNG";
         this.leftButton.style.height = "10%";
 
 
         this.rightButton = document.createElement("img")
-        this.rightButton.src = "pics/right.png";
+        this.rightButton.src = "/colabzine/pics/right.png";
         this.rightButton.style.height = "10%";
 
 
@@ -109,7 +109,10 @@ class Zine {
         document.body.append(this.container);
 
 
-        // document.body.append(document.createElement("br"));
+        document.body.append(document.createElement("br"));
+        document.body.append(document.createElement("hr"));
+        document.body.append(document.createElement("br"));
+
         // document.body.append(this.leftButton);
         // document.body.append(this.rightButton);
 
@@ -127,7 +130,7 @@ class Zine {
                 self.curPage = 1;
             }
 
-            self.displayImg.src = 'zines/' + self.name + "/" + self.curPage + ".jpg";
+            self.displayImg.src = '/colabzine/zines/' + self.name + "/" + self.curPage + ".jpg";
             self.displayText.innerHTML = self.pageNames[self.curPage]
         };
 
@@ -140,7 +143,7 @@ class Zine {
                 self.curPage = 8;
             }
 
-            self.displayImg.src = 'zines/' + self.name + "/" + self.curPage + ".jpg";
+            self.displayImg.src = '/colabzine/zines/' + self.name + "/" + self.curPage + ".jpg";
             self.displayText.innerHTML = self.pageNames[self.curPage]
         };
         // this.rightButton.onclick = this.onRight();
