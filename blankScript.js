@@ -57,7 +57,7 @@ class Zine {
         this.displayImg.src = '/colabzine/zines/' + folderName + "/" + this.curPage + ".jpg";
 
         this.leftButton = document.createElement("img")
-        this.leftButton.src = "/colabzine/pics/left.PNG";
+        this.leftButton.src = "/colabzine/pics/left.png";
         this.leftButton.style.height = "10%";
 
 
