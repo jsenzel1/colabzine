@@ -162,21 +162,16 @@ strangersZine.initialize();
 const strangersZine2 = new Zine("strangers", "Strangers At Home", "Jonah");
 strangersZine2.initialize();
 
-const strangersZine = new Zine("strangers", "Strangers At Home", "Jonah");
+const strangersZine3 = new Zine("strangers", "Strangers At Home", "Jonah");
+strangersZine3.initialize();
+
+const strangersZine4 = new Zine("strangers", "Strangers At Home", "Jonah");
+strangersZine4.initialize();
+
+const strangersZine5 = new Zine("strangers", "Strangers At Home", "Jonah");
 strangersZine.initialize();
 
 const strangersZine2 = new Zine("strangers", "Strangers At Home", "Jonah");
-strangersZine2.initialize();
+strangersZine5.initialize();
 
-const strangersZine = new Zine("strangers", "Strangers At Home", "Jonah");
-strangersZine.initialize();
-
-const strangersZine2 = new Zine("strangers", "Strangers At Home", "Jonah");
-strangersZine2.initialize();
-
-const strangersZine = new Zine("strangers", "Strangers At Home", "Jonah");
-strangersZine.initialize();
-
-const strangersZine2 = new Zine("strangers", "Strangers At Home", "Jonah");
-strangersZine2.initialize();
 // strangersZine.rightButton.onclick = strangersZine.onRight;
