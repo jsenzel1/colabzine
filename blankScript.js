@@ -171,7 +171,7 @@ strangersZine4.initialize();
 const strangersZine5 = new Zine("strangers", "Strangers At Home", "Jonah");
 strangersZine.initialize();
 
-const strangersZine2 = new Zine("strangers", "Strangers At Home", "Jonah");
+const strangersZine5 = new Zine("strangers", "Strangers At Home", "Jonah");
 strangersZine5.initialize();
 
 // strangersZine.rightButton.onclick = strangersZine.onRight;
